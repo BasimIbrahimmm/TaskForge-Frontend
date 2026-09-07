@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="TaskForge — forge discipline, execute missions, and stay consistent with your goals."
+    >
+
+    <title>TaskForge — Forge Your Progress</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         APP SHELL
+    ========================== -->
+    <div class="app-shell">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-inner">
+
+                <!-- Brand -->
+                <div class="brand">
+                    <div class="brand-mark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="brand-text">
+                        <h1>TaskForge</h1>
+                        <p>Forge your progress.</p>
+                    </div>
+                </div>
+
+
+                <!-- Navigation -->
+                <nav class="main-nav" aria-label="Main navigation">
+
+                    <p class="nav-label">Workspace</p>
+
+                    <a href="#dashboard" class="nav-item active">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                            <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                            <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+                            <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="#tasks" class="nav-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8 6h13"></path>
+                            <path d="M8 12h13"></path>
+                            <path d="M8 18h13"></path>
+                            <path d="M3 6h.01"></path>
+                            <path d="M3 12h.01"></path>
+                            <path d="M3 18h.01"></path>
+                        </svg>
+                        <span>My Tasks</span>
+                        <span class="nav-count">12</span>
+                    </a>
+
+                    <a href="#projects" class="nav-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v8A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"></path>
+                        </svg>
+                        <span>Projects</span>
+                    </a>
+
+                    <a href="#calendar" class="nav-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                            <path d="M16 3v4"></path>
+                            <path d="M8 3v4"></path>
+                            <path d="M3 10h18"></path>
+                        </svg>
+                        <span>Calendar</span>
+                    </a>
+
+                    <p class="nav-label second-label">Management</p>
+
+                    <a href="#analytics" class="nav-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 19V5"></path>
+                            <path d="M4 19h17"></path>
+                            <path d="m7 15 4-5 3 3 5-7"></path>
+                        </svg>
+                        <span>Analytics</span>
+                    </a>
+
+                    <a href="#settings" class="nav-item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-1.8 1.8-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.03 1.56V22h-2.55v-.1a1.7 1.7 0 0 0-1.03-1.56 1.7 1.7 0 0 0-1.88.34l-.06.06-1.8-1.8.06-.06A1.7 1.7 0 0 0 8.1 15a1.7 1.7 0 0 0-1.56-1.03H6V11.4h.1A1.7 1.7 0 0 0 7.66 10.4a1.7 1.7 0 0 0-.34-1.88l-.06-.06 1.8-1.8.06.06a1.7 1.7 0 0 0 1.88.34 1.7 1.7 0 0 0 1.03-1.56V5h2.55v.1a1.7 1.7 0 0 0 1.03 1.56 1.7 1.7 0 0 0 1.88-.34l.06-.06 1.8 1.8-.06.06A1.7 1.7 0 0 0 19.4 10c.16.6.7 1.03 1.32 1.03h.1v2.55h-.1A1.7 1.7 0 0 0 19.4 15z"></path>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+
+                </nav>
+
+
+                <!-- Keep Forging -->
+                <div class="forge-card">
+
+                    <div class="forge-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m14.5 3.5 6 6"></path>
+                            <path d="m12 6 6 6"></path>
+                            <path d="m4 20 5.5-5.5"></path>
+                            <path d="m3 21 1-4 3 3z"></path>
+                            <path d="m9 3 12 12"></path>
+                        </svg>
+                    </div>
+
+                    <div class="forge-content">
+                        <strong>Keep Forging</strong>
+                        <p>Stay consistent with your goals.</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Sidebar Footer -->
+                <div class="sidebar-footer">
+
+                    <div class="user-profile">
+
+                        <div class="avatar">
+                            BA
+                        </div>
+
+                        <div class="user-info">
+                            <strong>Basim</strong>
+                            <span>My Account</span>
+                        </div>
+
+                        <button class="profile-more" aria-label="Profile options">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="5" cy="12" r="1.5"></circle>
+                                <circle cx="12" cy="12" r="1.5"></circle>
+                                <circle cx="19" cy="12" r="1.5"></circle>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN AREA
+        ========================== -->
+        <div class="main-wrapper">
+
+            <!-- =========================
+                 TOPBAR
+            ========================== -->
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button
+                        class="mobile-menu"
+                        id="mobileMenu"
+                        aria-label="Open navigation"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 6h16"></path>
+                            <path d="M4 12h16"></path>
+                            <path d="M4 18h16"></path>
+                        </svg>
+                    </button>
+
+                    <div class="search-box">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m20 20-4-4"></path>
+                        </svg>
+
+                        <input
+                            type="search"
+                            id="taskSearch"
+                            placeholder="Search tasks, projects..."
+                            aria-label="Search tasks and projects"
+                        >
+
+                        <kbd>⌘ K</kbd>
+
+                    </div>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <!-- Theme -->
+                    <button
+                        class="icon-button"
+                        id="themeToggle"
+                        aria-label="Toggle dark mode"
+                        title="Toggle theme"
+                    >
+                        <svg class="sun-icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="m4.93 4.93 1.41 1.41"></path>
+                            <path d="m17.66 17.66 1.41 1.41"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="m4.93 19.07 1.41-1.41"></path>
+                            <path d="m17.66 6.34 1.41-1.41"></path>
+                        </svg>
+
+                        <svg class="moon-icon" viewBox="0 0 24 24">
+                            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.7 6.7 0 0 0 21 12.8z"></path>
+                        </svg>
+                    </button>
+
+
+                    <!-- Notification -->
+                    <button
+                        class="icon-button notification-button"
+                        aria-label="Notifications"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M10 21h4"></path>
+                        </svg>
+
+                        <span class="notification-dot"></span>
+                    </button>
+
+
+                    <div class="topbar-divider"></div>
+
+
+                    <div class="topbar-user">
+                        <div class="avatar small">BA</div>
+
+                        <div class="topbar-user-info">
+                            <strong>Basim</strong>
+                            <span>Free Plan</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================
+                 MAIN CONTENT
+            ========================== -->
+            <main class="main-content" id="dashboard">
+
+                <!-- Page Heading -->
+                <section class="page-heading">
+
+                    <div>
+                        <p class="eyebrow">Wednesday, September 2026</p>
+
+                        <h2>Good Afternoon, Basim.</h2>
+
+                        <p class="heading-description">
+                            Stay focused. Forge your next achievement.
+                        </p>
+                    </div>
+
+                    <button class="primary-button" id="openTaskModal">
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 5v14"></path>
+                            <path d="M5 12h14"></path>
+                        </svg>
+
+                        New Task
+
+                    </button>
+
+                </section>
+
+
+                <!-- =========================
+                     STATS
+                ========================== -->
+                <section class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span class="stat-label">Tasks Completed</span>
+
+                            <div class="stat-icon blue">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="m5 12 4 4L19 6"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="stat-value">48</div>
+
+                        <div class="stat-bottom positive">
+                            <span>+12%</span>
+                            <span>vs last week</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span class="stat-label">Active Projects</span>
+
+                            <div class="stat-icon purple">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v8A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="stat-value">06</div>
+
+                        <div class="stat-bottom">
+                            <span>2 approaching</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span class="stat-label">Focus Hours</span>
+
+                            <div class="stat-icon green">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="8"></circle>
+                                    <path d="M12 8v5l3 2"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="stat-value">32.5</div>
+
+                        <div class="stat-bottom positive">
+                            <span>+8.4%</span>
+                            <span>this week</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span class="stat-label">Consistency</span>
+
+                            <div class="stat-icon orange">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 3v18"></path>
+                                    <path d="M5 8h9a4 4 0 1 0 0-8"></path>
+                                    <path d="M19 16h-9a4 4 0 1 0 0 8"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="stat-value">87%</div>
+
+                        <div class="stat-bottom positive">
+                            <span>Excellent</span>
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =========================
+                     DASHBOARD GRID
+                ========================== -->
+                <section class="dashboard-grid">
+
+                    <!-- LEFT -->
+                    <div class="dashboard-main">
+
+                        <!-- Projects -->
+                        <section class="content-section" id="projects">
+
+                            <div class="section-header">
+
+                                <div>
+                                    <h3>Active Projects</h3>
+                                    <p>Keep your momentum moving forward.</p>
+                                </div>
+
+                                <button class="text-button">
+                                    View all
+                                    <span>→</span>
+                                </button>
+
+                            </div>
+
+
+                            <div class="project-grid">
+
+                                <article class="project-card">
+
+                                    <div class="project-card-top">
+
+                                        <div class="project-symbol blue-symbol">
+                                            TF
+                                        </div>
+
+                                        <button class="more-button">•••</button>
+
+                                    </div>
+
+                                    <h4>Portfolio Website</h4>
+
+                                    <p>Build and refine your developer portfolio.</p>
+
+                                    <div class="project-progress">
+
+                                        <div class="progress-info">
+                                            <span>Progress</span>
+                                            <strong>78%</strong>
+                                        </div>
+
+                                        <div class="progress-bar">
+                                            <span style="width: 78%"></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <span>8 / 10 tasks</span>
+                                        <span class="deadline">Due Sep 14</span>
+                                    </div>
+
+                                </article>
+
+
+                                <article class="project-card">
+
+                                    <div class="project-card-top">
+
+                                        <div class="project-symbol dark-symbol">
+                                            AI
+                                        </div>
+
+                                        <button class="more-button">•••</button>
+
+                                    </div>
+
+                                    <h4>AI Recruitment System</h4>
+
+                                    <p>Shape the next phase of your FYP.</p>
+
+                                    <div class="project-progress">
+
+                                        <div class="progress-info">
+                                            <span>Progress</span>
+                                            <strong>54%</strong>
+                                        </div>
+
+                                        <div class="progress-bar">
+                                            <span style="width: 54%"></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <span>14 / 26 tasks</span>
+                                        <span class="deadline">Due Oct 02</span>
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- Tasks -->
+                        <section class="content-section" id="tasks">
+
+                            <div class="section-header">
+
+                                <div>
+                                    <h3>My Tasks</h3>
+                                    <p>Your mission list for today.</p>
+                                </div>
+
+                                <div class="task-filter">
+                                    <button class="filter-button active">Today</button>
+                                    <button class="filter-button">Upcoming</button>
+                                </div>
+
+                            </div>
+
+
+                            <div class="task-list" id="taskList">
+
+                                <article class="task-item">
+
+                                    <button class="task-check" aria-label="Complete task">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="m5 12 4 4L19 6"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div class="task-details">
+                                        <strong>Finish responsive layout</strong>
+                                        <span>Portfolio Website</span>
+                                    </div>
+
+                                    <span class="priority high">High</span>
+
+                                    <span class="task-time">Today</span>
+
+                                </article>
+
+
+                                <article class="task-item">
+
+                                    <button class="task-check" aria-label="Complete task">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="m5 12 4 4L19 6"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div class="task-details">
+                                        <strong>Review FYP requirements</strong>
+                                        <span>AI Recruitment System</span>
+                                    </div>
+
+                                    <span class="priority medium">Medium</span>
+
+                                    <span class="task-time">Today</span>
+
+                                </article>
+
+
+                                <article class="task-item">
+
+                                    <button class="task-check" aria-label="Complete task">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="m5 12 4 4L19 6"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div class="task-details">
+                                        <strong>Push latest changes to GitHub</strong>
+                                        <span>Portfolio Website</span>
+                                    </div>
+
+                                    <span class="priority low">Low</span>
+
+                                    <span class="task-time">Tomorrow</span>
+
+                                </article>
+
+
+                                <article class="task-item">
+
+                                    <button class="task-check" aria-label="Complete task">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="m5 12 4 4L19 6"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div class="task-details">
+                                        <strong>Study JavaScript concepts</strong>
+                                        <span>Personal Development</span>
+                                    </div>
+
+                                    <span class="priority medium">Medium</span>
+
+                                    <span class="task-time">Tomorrow</span>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- RIGHT -->
+                    <aside class="dashboard-side">
+
+                        <!-- Focus -->
+                        <section class="side-card focus-card" id="analytics">
+
+                            <div class="side-card-header">
+                                <div>
+                                    <h3>Weekly Focus</h3>
+                                    <p>Your productivity rhythm.</p>
+                                </div>
+
+                                <span class="trend">+14%</span>
+                            </div>
+
+
+                            <div class="chart">
+
+                                <div class="chart-y">
+                                    <span>8h</span>
+                                    <span>6h</span>
+                                    <span>4h</span>
+                                    <span>2h</span>
+                                    <span>0h</span>
+                                </div>
+
+                                <div class="chart-area">
+
+                                    <div class="chart-grid-lines"></div>
+
+                                    <div class="bars">
+
+                                        <div class="bar-wrap">
+                                            <div class="bar" style="height: 52%"></div>
+                                            <span>M</span>
+                                        </div>
+
+                                        <div class="bar-wrap">
+                                            <div class="bar" style="height: 68%"></div>
+                                            <span>T</span>
+                                        </div>
+
+                                        <div class="bar-wrap">
+                                            <div class="bar active-bar" style="height: 82%"></div>
+                                            <span>W</span>
+                                        </div>
+
+                                        <div class="bar-wrap">
+                                            <div class="bar" style="height: 60%"></div>
+                                            <span>T</span>
+                                        </div>
+
+                                        <div class="bar-wrap">
+                                            <div class="bar" style="height: 75%"></div>
+                                            <span>F</span>
+                                        </div>
+
+                                        <div class="bar-wrap">
+                                            <div class="bar" style="height: 42%"></div>
+                                            <span>S</span>
+                                        </div>
+
+                                        <div class="bar-wrap">
+                                            <div class="bar" style="height: 30%"></div>
+                                            <span>S</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- Deadlines -->
+                        <section class="side-card" id="calendar">
+
+                            <div class="side-card-header">
+
+                                <div>
+                                    <h3>Upcoming</h3>
+                                    <p>Important deadlines.</p>
+                                </div>
+
+                                <button class="small-link">Calendar</button>
+
+                            </div>
+
+
+                            <div class="deadline-list">
+
+                                <div class="deadline-item">
+
+                                    <div class="date-box">
+                                        <strong>14</strong>
+                                        <span>SEP</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>Portfolio launch</strong>
+                                        <span>Portfolio Website</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="deadline-item">
+
+                                    <div class="date-box">
+                                        <strong>20</strong>
+                                        <span>SEP</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>Project milestone</strong>
+                                        <span>AI Recruitment System</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="deadline-item">
+
+                                    <div class="date-box">
+                                        <strong>02</strong>
+                                        <span>OCT</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>FYP documentation</strong>
+                                        <span>AI Recruitment System</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- Daily Goal -->
+                        <section class="side-card goal-card">
+
+                            <div class="goal-ring">
+
+                                <svg viewBox="0 0 100 100">
+                                    <circle
+                                        class="ring-bg"
+                                        cx="50"
+                                        cy="50"
+                                        r="40"
+                                    ></circle>
+
+                                    <circle
+                                        class="ring-progress"
+                                        cx="50"
+                                        cy="50"
+                                        r="40"
+                                    ></circle>
+                                </svg>
+
+                                <div class="goal-number">
+                                    <strong>72%</strong>
+                                    <span>complete</span>
+                                </div>
+
+                            </div>
+
+                            <div class="goal-content">
+                                <h3>Daily Mission</h3>
+                                <p>You're ahead of your daily target. Keep forging.</p>
+                            </div>
+
+                        </section>
+
+                    </aside>
+
+                </section>
+
+            </main>
+
+
+            <!-- =========================
+                 FOOTER
+            ========================== -->
+            <footer class="footer">
+
+                <span>TaskForge</span>
+
+                <span>Forge discipline. Execute consistently.</span>
+
+                <span>© 2026</span>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TASK MODAL
+    ========================== -->
+    <div class="modal-overlay" id="taskModal">
+
+        <div
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="modal-eyebrow">New Mission</span>
+                    <h2 id="modalTitle">Create a task</h2>
+                </div>
+
+                <button class="modal-close" id="closeTaskModal">
+                    ×
+                </button>
+
+            </div>
+
+
+            <form id="taskForm">
+
+                <div class="form-group">
+
+                    <label for="taskTitle">
+                        Task name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskTitle"
+                        placeholder="What needs to be done?"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="taskProject">
+                            Project
+                        </label>
+
+                        <select id="taskProject">
+
+                            <option>Portfolio Website</option>
+                            <option>AI Recruitment System</option>
+                            <option>Personal Development</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="taskPriority">
+                            Priority
+                        </label>
+
+                        <select id="taskPriority">
+
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        id="cancelTask"
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Forge Task
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
