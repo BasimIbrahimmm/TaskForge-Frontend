@@ -103,6 +103,7 @@ The selected theme is stored using LocalStorage so the preference remains availa
 
 ## Project Structure
 
+```text
 TaskForge/
 │
 ├── index.html
